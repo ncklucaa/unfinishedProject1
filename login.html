@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>login</h2>
+        <input type="text" id="username" placeholder="Username"><br>
+        <input type="password" id="password" placeholder="Password"><br>
+        <button id="loginBtn">login</button>
+        <p id="loginError" style="color:red; display:none;">invalid login</p>
+    </div>
+    <div id="dashboard" style="display:none;" class="ticket-view">
+        <h2>tickets</h2>
+        <button id="loadBtn">view tickets</button>
+        <input type="file" id="fileInput" style="display:none" />
+        <div class="ticket-table">
+            <table id="ticketTable">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>problem</th>
+                        <th>status</th>
+                        <th>date</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>create ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <span onclick="location.href='dashboard.html'">home</span>
+        </div>
+    </nav>
+    <main class="container">
+        <h1>create ticket</h1>
+        <p>form for tickets</p>
+
+        <form id="ticketForm">
+            <div class="form-row">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="fullName" placeholder="Full Name" required>
+            </div>
+            <input type="text" id="title" placeholder="Issue Title" required>
+
+            <label class="department">"help desk"</label>
+
+            <textarea id="content" placeholder="Describe your issue..." rows="6" required></textarea>
+
+            <button type="submit">create ticket</button>
+        </form>
+    </main>
+    <script>
+        document.getElementById("ticketForm").addEventListener("submit", function (e)
+        {
+      e.preventDefault();
+      alert("ticket in!!!");
+      location.href = "dashboard.html";
+    </script>
+</body>
+</html>
